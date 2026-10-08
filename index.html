@@ -474,9 +474,9 @@
           mediaData.wmUrl = data.wmplay;
           mediaData.title = (data.title || 'POMTIK_Video').replace(/[^a-zA-Z0-9]/g, '_').substring(0, 20);
 
-          document.getElementById('btnNoWm').onclick = () => downloadFile(mediaData.noWmUrl, `${mediaData.title}_NoWM.mp4`);
-          document.getElementById('btnMp3').onclick = () => downloadFile(mediaData.mp3Url, `${mediaData.title}_Audio.mp3`);
-          document.getElementById('btnWm').onclick = () => downloadFile(mediaData.wmUrl, `${mediaData.title}_WM.mp4`);
+          document.getElementById('btnNoWm').onclick = () => downloadFile(mediaData.noWmUrl, `${mediaData.title}POMTIK_.mp4.`);
+          document.getElementById('btnMp3').onclick = () => downloadFile(mediaData.mp3Url, `${mediaData.title}POMTIK_.mp3.`);
+          document.getElementById('btnWm').onclick = () => downloadFile(mediaData.wmUrl, `${mediaData.title}POMTIK_.mp4.`);
 
           videoPreview.style.display = 'block';
         } else {
